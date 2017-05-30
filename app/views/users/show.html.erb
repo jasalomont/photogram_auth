@@ -1,0 +1,9 @@
+<%= @user.id %>
+<ul>
+  <%@user.photos.each do |photo| %>
+  <li>  <img src="<%= photo.image  %>" width="500">
+    <%= photo.caption %>
+  </li>
+
+<% end %>
+</ul>

@@ -1,0 +1,8 @@
+<!-- <%= @userlikes.name %> Likes -->
+<ul>
+  <%@userlikes.each do |photo| %>
+  <li class="list-group-item">  <img src="<%= photo.photo.image  %>" width="500">
+    <%= photo.photo.caption %>
+  </li>
+<% end %>
+</ul>
